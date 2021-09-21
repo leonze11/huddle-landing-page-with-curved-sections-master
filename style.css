@@ -1,0 +1,413 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+    --Cyan: hsl(192, 100%, 9%);
+    --Blue: hsl(207, 100%, 98%);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+header{
+    display: flex;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1302px;
+    margin: 0 auto;
+}
+
+/* header */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 200px;
+}
+.navbar__link{
+    color: var(--Pink);
+    border: 1px solid var(--Pink);
+    padding: 7px 20px;
+    border-radius: 100px;
+}
+.navbar__link--hover:hover{
+    color: var(--Light-Pink);
+    border-color: var(--Light-Pink);
+}
+
+/* main */
+.build{
+    text-align: center;
+}
+.build h1{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.build p{
+    width: 30rem;
+    margin: 0 auto;
+}
+.build__link{
+    margin-top: 50px;
+    display: inline-block;
+    color: var(--Blue);
+    background-color: var(--Pink);
+    padding: 20px 80px;
+    border-radius: 100px;
+}
+.build__link--hover:hover{
+    background-color: var(--Light-Pink);
+    border-color: var(--Light-Pink);
+}
+.dsc-img{
+    text-align: center;
+    margin-top: 100px;
+}
+.dsc-img > img{
+    width: 52rem;
+}
+.dsc-img h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.dsc-img__description{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+.dsc-img__description__communities{
+    margin-left: 18rem;
+}
+.dsc-img__description__communities img{
+    text-align: left;
+    display: block;
+}
+.dsc-img__description__messages{
+    margin-right: 21rem;
+}
+.dsc-img__description__messages img{
+    text-align: left;
+    display: block;
+}
+.card{
+    margin-top: 130px;
+}
+.card__grow{
+    overflow: hidden;
+}
+picture, picture img{
+    margin-bottom: -.5rem;
+    overflow: auto;
+  }
+  
+  
+  .card__grow>picture:nth-of-type(2n + 1), .card__grow>picture:nth-of-type(2n + 1 ) img{
+      margin-bottom: -2.5rem;
+  }
+  
+  .card__grow>picture:nth-of-type(2n), .card__grow>picture:nth-of-type(2n) img{
+    margin-top: -0.5rem;
+    margin-bottom: 5rem;
+  }
+.grow{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--Blue);
+}
+.card__grow img{
+    width: 30rem;
+    margin-right: 20px;
+}
+.card__grow__dsc{
+    width: 30rem;
+}
+.card__grow__dsc h1{
+    margin-bottom: 20px;
+}
+.card__conversation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.card__conversation img{
+    width: 30rem;
+}
+.card__conversation__dsc{
+    width: 30rem;
+}
+.card__conversation__dsc h1{
+    margin-bottom: 20px;
+}
+.card__user{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--Blue);
+}
+.card__user img{
+    width: 30rem;
+}
+.card__user__dsc{
+    width: 30rem;
+}
+.card__user__dsc h1{
+    margin-bottom: 20px;
+}
+.ready{
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.ready h1{
+    margin-bottom: 1rem;
+}
+.ready__link{
+    margin-top: 50px;
+    display: inline-block;
+    color: var(--Blue);
+    background-color: var(--Pink);
+    padding: 20px 80px;
+    border-radius: 100px;
+}
+.ready__link--hover:hover{
+    background-color: var(--Light-Pink);
+    border-color: var(--Light-Pink);
+}
+/* footer  */
+
+.footer-content{
+    background-color: var(--Cyan);
+}
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color:var(--Blue);
+}
+.lorem{
+    width: 30rem;
+    margin-top: 5rem;
+}
+.lorem p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 21rem;
+}
+.newsletter{
+    width: 30rem;
+    margin-top: 5rem;
+}
+.newsletter h1{
+    margin-bottom: 20px;
+}
+.newsletter p{
+    margin-bottom: 30px;
+}
+.newsletter input{
+    padding: 10px;
+    width: 21rem;
+    margin-right: 10px;
+    border-radius: 3px;
+    border: none;
+}
+.newsletter input:focus{
+    border-color: red;
+}
+.newsletter input:invalid{
+    border-color: red;
+}
+.btn{
+    margin-top: 50px;
+    color: var(--Blue);
+    background-color: var(--Pink);
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.adress{
+    margin-bottom: 30px;
+}
+.adress a{
+    color: var(--Blue);
+}
+.adress li{
+    margin-bottom: 10px;
+}
+.adress ion-icon{
+    margin-right: 20px;
+}
+.social{
+    display: flex;
+    margin-bottom: 20px;
+}
+.social ion-icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    padding: 3px;
+}
+.social a{
+    color: var(--Blue);
+    margin-right: 20px;
+    text-align: center; 
+}
+
+.social ion-icon:hover{
+    color: black;
+    background: #00c3f1;
+}
+.dsc{
+    background-color: var(--Cyan);
+}
+/* mobile */
+@media screen and (max-width: 380px){
+    /* header */
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+    }
+    .navbar img{
+        width: 10rem;
+    }
+    /* main */
+    .build h1{
+        font-size: 24px;
+    }
+    .build p{
+        width: 22rem;
+    }
+    .build__link{
+        padding: 10px 30px;
+    }
+    .dsc-img > img{
+        width: 20rem;
+    }
+    .dsc-img__description{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .dsc-img__description__communities{
+        margin-left: 50px;
+        margin-bottom: 70px;
+    }
+    .dsc-img__description__communities img{
+        display: inline-block;
+        margin-right: 120px;
+    }
+    .dsc-img__description__messages{
+        margin-left: 120px;
+    }
+    .dsc-img__description__messages p{
+        text-align: center;
+        width: 150px;
+    }
+    .dsc-img h1{
+        text-align: center;
+    }
+    .card__grow>picture:nth-of-type(2n), .card__grow>picture:nth-of-type(2n) img{
+        margin-top: 0rem;
+      }
+    .grow{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card__grow img{
+        width: 15rem;
+        margin-top: 5rem;
+        display: block;
+    }
+    .card__grow__dsc{
+        width: 22rem;
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        order: 1;
+    }
+    
+    .card__grow__dsc h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .card__conversation{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    .card__conversation img{
+        width: 15rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .card__conversation__dsc{
+        text-align: center;
+        width: 21rem;
+    }
+    .card__user{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    } 
+    .card__user img{
+        width: 15rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    } 
+    .card__user__dsc{
+        width: 21rem;
+        text-align: center;
+        order: 1;
+        margin-bottom: 5rem;
+    } .ready h1{
+        font-size: 24px;
+    } 
+    .ready__link{
+        padding: 10px 30px;
+    }
+    
+    .lorem{
+        order: 1;
+        margin-left: 1rem;
+    }
+    .newsletter{
+        margin-left: 1rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn{
+        margin-top: 1rem;
+        width: 6rem;
+        align-self: end;
+        margin-right: 1.5rem;
+    }
+    
+}
